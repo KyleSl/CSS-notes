@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS Notecatcher</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Code Cheatsheet</h1>
+    </header>
+
+    <!-- flex container -->
+    <section class="flex-container">
+      <section class="card">
+        <h2>Flex Box</h2>
+        <p>
+          Flex boxes are a very useful way to format information. They are used
+          to make sure that every element fits within a certain container. On
+          this website, all of these cards are within one big flex container,
+          which allows them to scale. Using media queries, seen on another card,
+          we are able to make sure that the page doesn't break on smaller
+          screens.
+        </p>
+        <pre><code>
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+        </code></pre>
+      </section>
+      <section class="card">
+        <h2>Grid</h2>
+        <p>
+          Grids are another way to format information. I am not super sure how
+          they work but I will update this in the future.
+        </p>
+        <pre><code>
+.grid {
+    display: grid;
+}
+        </code></pre>
+      </section>
+      <section class="card">
+        <h2>Media Queries</h2>
+        <p>
+          Media queries are used to get information about the device that the
+          website is displaying on. The most common use is to find the screen
+          size and change certain elements accordingly. For example, this
+          website aligns everything into one column.
+        </p>
+        <pre><code>
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+        </code></pre>
+      </section>
+      <section class="card">
+        <h2>Element Selectors</h2>
+        <p>
+          Element selectors are used in CSS to pick the specific elements you
+          want to style. If you want to be good with CSS, you need to master
+          these selectors.
+        </p>
+        <pre><code>
+header {}
+header h1 {}
+#navbar ul li {}
+.container ul li + li {}
+        </code></pre>
+      </section>
+      <section class="card">
+        <h2>Classes & IDs</h2>
+        <p>
+          Classes and IDs are used in HTML and CSS to help with the element
+          selection process. You can set a class or ID to an element in HTML and
+          modify it in CSS. This is another thing you have to master if you want
+          to be fluent in CSS. IDs take priority over classes.
+        </p>
+        <pre><code>
+section class="card"
+
+.card {
+    font-size: 200%;
+}
+        </code></pre>
+      </section>
+    </section>
+    <footer>
+      <h3>Made with CSS</h3>
+    </footer>
+  </body>
+</html>

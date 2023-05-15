@@ -1,0 +1,81 @@
+:root {
+  --black: black;
+  --green: rgb(30, 216, 30);
+}
+
+body {
+  margin: 0;
+  background-color: var(--black);
+  color: var(--green);
+  font-family: "Roboto", sans-serif;
+}
+
+body h1 {
+  font-size: 300%;
+  margin: 0;
+  margin-bottom: 2%;
+  padding: 1%;
+  font-weight: 700;
+}
+
+header {
+  margin: 0;
+  background-color: var(--green);
+  color: var(--black);
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+  margin: 1%;
+  text-align: center;
+  border: 5px solid var(--green);
+  flex: 1 0 30%;
+}
+
+.card pre {
+  margin: 2%;
+  border: 5px dashed var(--green);
+  padding: 0 5% 0 5%;
+  text-align: left;
+}
+
+.card p {
+  padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .card {
+    min-width: 40%;
+  }
+}
+
+footer {
+  margin: 0;
+  background-color: var(--green);
+  color: var(--black);
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 200%;
+  margin: 0;
+  margin-top: 2%;
+  padding: 1%;
+  font-weight: 700;
+}
