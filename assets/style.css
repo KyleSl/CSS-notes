@@ -40,6 +40,7 @@ header {
   text-align: center;
   border: 5px solid var(--green);
   flex: 1 0 30%;
+  margin-top: 2%;
 }
 
 .card pre {
@@ -78,4 +79,13 @@ footer h3 {
   margin-top: 2%;
   padding: 1%;
   font-weight: 700;
+}
+
+.card h2 {
+  width: 50%;
+  align-self: center;
+  position: relative;
+  top: -11.5%;
+  border: 5px solid var(--green);
+  background-color: var(--black);
 }
